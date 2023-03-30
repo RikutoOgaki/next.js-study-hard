@@ -4,7 +4,7 @@ import { Box, Flex, Text, Input } from '@chakra-ui/react'
 export default function Smaple04() {
 
     function rollDice() {
-        return Math.floor(Math.random() * 6 - 1)
+        return Math.floor(Math.random() * 6 + 1)
     }
 
     const [state, setState] = useState(0)
