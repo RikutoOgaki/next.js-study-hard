@@ -16,28 +16,31 @@ export default function Sample09() {
     return (
         <>
             <Box>
-                <Input type='text' value={state.task}
-                    onChange={(e) => setState({
-                        ...state,
-                        task: e.target.value
-                    })}
-                ></Input>
-                <Input type='button' value={'add'}
-                    onClick={() => setState({
-                        ...state,
-                        task: '',
-                        list: [
-                            ...state.list,
-                            state.task
-                        ]
-                    })}
-                ></Input>
+                <Flex>
+                    <Input type='text' value={state.task} w={'30rem'}
+                        onChange={(e) => setState({
+                            ...state,
+                            task: e.target.value
+                        })}
+                    ></Input>
+                    <Input type='button' value={'add'} w={'15rem'}
+                        onClick={() => setState({
+                            ...state,
+                            task: '',
+                            list: [
+                                ...state.list,
+                                state.task
+                            ]
+                        })}
+                    ></Input>
+                </Flex>
                 {state.list.map((v, idx) =>
-                    <Box>
-                        <Text>{v}</Text>
-                        <Input type='button' value={'削除'}
+                    <Flex>
+                        <Text lineHeight={'9'}>{v}</Text>
+                        <Input type='button' value={'削除'} w={'10rem'}
+
                         ></Input>
-                    </Box>
+                    </Flex>
                 )}
             </Box>
         </>
