@@ -28,10 +28,17 @@ export default function Sample09() {
                         task: '',
                         list: [
                             ...state.list,
-
+                            state.task
                         ]
                     })}
                 ></Input>
+                {state.list.map((v, idx) =>
+                    <Box>
+                        <Text>{v}</Text>
+                        <Input type='button' value={'削除'}
+                        ></Input>
+                    </Box>
+                )}
             </Box>
         </>
     )
