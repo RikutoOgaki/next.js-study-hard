@@ -56,6 +56,6 @@ const food: [string, number, number][] = [
 
 export default function Sample12() {
     return food.map(([moji, hueA, hueB]) => (
-        <Card moji={moji} hueA={hueA} hueB={hueB} />
+        <Card moji={moji} hueA={hueA} hueB={hueB} key={moji} />
     ))
 }
