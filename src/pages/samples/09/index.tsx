@@ -35,10 +35,13 @@ export default function Sample09() {
                     ></Input>
                 </Flex>
                 {state.list.map((v, idx) =>
-                    <Flex>
+                    <Flex key={idx}>
                         <Text lineHeight={'9'}>{v}</Text>
                         <Input type='button' value={'削除'} w={'10rem'}
-
+                            onClick={() => setState({
+                                ...state,
+                                list: state.list.filter((v, idx2) => idx !== idx2)
+                            })}
                         ></Input>
                     </Flex>
                 )}
