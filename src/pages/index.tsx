@@ -26,6 +26,8 @@ export default function Index() {
             <Link href={'/samples/10'}><ListItem>Sample10</ListItem></Link>
             <Link href={'/samples/11'}><ListItem>Sample11</ListItem></Link>
             <Link href={'/samples/12'}><ListItem>Sample12</ListItem></Link>
+            <Link href={'/samples/13'}><ListItem>Sample13</ListItem></Link>
+            <Link href={'/samples/14'}><ListItem>Sample14</ListItem></Link>
           </UnorderedList>
         </Flex>
       </Flex>
