@@ -16,7 +16,6 @@ export function Header() {
             <Box
                 as='header'
                 w={'100%'}
-                height={'5vh'}
             >
                 <nav>
                     <UnorderedList
@@ -24,7 +23,7 @@ export function Header() {
                         display={'flex'}
                         justifyContent={'space-around'}
                         listStyleType={'none'}
-                        bg={'blue'}
+                        bg={'black'}
                         color={'#fff'}
                         margin={0}
                     >
